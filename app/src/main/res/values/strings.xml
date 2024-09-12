@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">edominer_project</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="selected_image">Selected Image</string>
+    <string name="recognized_text_will_appear_here">Recognized text will appear here...</string>
+    <string name="save_text">Save To Database</string>
+    <string name="view_history">View History</string>
+</resources>

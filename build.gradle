@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath libs.gradle
+        // Add other classpath dependencies here
+    }
+}
+
+plugins {
+    alias(libs.plugins.android.application) apply false
+}
+
+
+allprojects {
+    repositories {
+        // Ensure these lines are commented out if the repositories are defined in settings.gradle
+        // google()
+        // mavenCentral()
+        // maven { url 'https://jitpack.io' }
+    }
+}

@@ -14,14 +14,10 @@ This application allows users to select an image and extract all the text from i
 |-------------|-----------------|-----------------|
 | ![Home Screen](screenshots/home_screen.jpg) | ![Image Selection](screenshots/image_selection.jpg) | ![Text Extraction](screenshots/text_extraction.jpg) |
 
-> *Replace the placeholder images above with actual screenshots of your application.*
-
 ## Sample Video
 
 Here's a sample video showcasing the app in action:
 [![Sample Video](screenshots/video_thumbnail.webp)](https://drive.google.com/file/d/1GIHbJEiB9rB6VS2PfKvXu9FSfqm_wEC2/view?usp=sharing)
-
-> *Replace the video link with a link to your sample video.*
 
 ## How to Use
 

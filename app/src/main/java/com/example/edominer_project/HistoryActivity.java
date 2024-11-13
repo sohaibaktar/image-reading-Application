@@ -31,7 +31,7 @@ public class HistoryActivity extends AppCompatActivity {
         new Thread(() -> {
             List<ImageTextEntity> entities = db.imageTextDao().getAllImageTexts(); // Fetch all records
             runOnUiThread(() -> {
-                adapter = new ImageTextAdapter(entities);
+                adapter = new ImageTextAdapter(HistoryActivity.this,entities);
                 recyclerView.setAdapter(adapter);
             });
         }).start();

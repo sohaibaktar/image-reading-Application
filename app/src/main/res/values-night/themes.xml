@@ -3,5 +3,11 @@
     <style name="Base.Theme.Edominer_project" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary_d</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark_d</item>
+        <item name="colorOnPrimary">@color/colorText_d</item>
+        <item name="android:colorBackground">@color/colorBackground_d</item>
+        <item name="android:textColor">@color/colorText_d</item>
+        <item name="buttonStyle">@style/ButtonStyle</item>
     </style>
 </resources>

@@ -2,4 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary_d">#BB86FC</color>
+    <color name="colorPrimaryDark_d">#3700B3</color>
+    <color name="colorAccent_d">#03DAC5</color>
+    <color name="colorBackground_d">#121212</color>
+    <color name="colorText_d">#FFFFFF</color>
+    <color name="colorButton_d">#FFBB86</color>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorText">#000000</color>
+    <color name="colorButton">#FF6200</color>
 </resources>

@@ -1,5 +1,7 @@
 package com.example.edominer_project;
 
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,10 +16,14 @@ import java.util.List;
 
 public class ImageTextAdapter extends RecyclerView.Adapter<ImageTextAdapter.ViewHolder> {
     private final List<ImageTextEntity> dataList;
+    private final Context context;
 
-    public ImageTextAdapter(List<ImageTextEntity> dataList) {
+    public ImageTextAdapter(Context context, List<ImageTextEntity> dataList) {
+        this.context = context;
         this.dataList = dataList;
     }
+
+
 
     @NonNull
     @Override
@@ -31,6 +37,14 @@ public class ImageTextAdapter extends RecyclerView.Adapter<ImageTextAdapter.View
         ImageTextEntity entity = dataList.get(position);
         holder.textView.setText(entity.text);
         holder.imageView.setImageURI(Uri.parse(entity.imagePath));
+
+        // Set click listener for each item
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, DetailsActivity.class);
+            intent.putExtra("imagePath", entity.imagePath);
+            intent.putExtra("text", entity.text);
+            context.startActivity(intent);
+        });
     }
 
     @Override
